@@ -23,7 +23,7 @@ public class DirectoryElementScannerTest {
     // Some OSes, such as OS X, adds .DS_STORE files to directories which we do not have control over.
     private final static Predicate<DirectoryElement> IS_NON_OS_FILE = elem -> !elem.getAbsPath().endsWith("/.DS_Store");
 
-    private final static String TEST_RESOURCES_RELATIVE_PATH = "src/dirscanner/resources";
+    private final static String TEST_RESOURCES_RELATIVE_PATH = "src/test/resources";
 
     private DirectoryElementScanner extractor;
 
